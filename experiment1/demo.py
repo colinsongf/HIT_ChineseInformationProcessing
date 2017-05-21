@@ -89,7 +89,7 @@ def cal_chinese_word_7(_dict,_account):
     newAccount = 0.0
     i = 0
     fruency6000 = fruency3000
-    #使用的语料没有超出3000个生字
+    #语料没有超出3000个生字
     # while i<6000:
     #     newAccount = newAccount + _dict[i][1]
     #     i += 1
@@ -111,7 +111,7 @@ def cal_entropy(_list):
 if __name__ == '__main__':
 
     begin = datetime.datetime.now()
-    _dict,_account = count_chinese_word('test.txt', 'GBK')
+    _dict,_account = count_chinese_word('人民日报.txt', 'GBK')
 
     """给出前100个汉字高频字的频率统计结果"""
     _list = cal_chinese_word_top100(_dict, _account)
